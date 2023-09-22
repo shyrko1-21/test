@@ -1,0 +1,26 @@
+{
+  "name": "elec",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "your.id",
+    "linux": {
+      "target": "apk",
+      "maintainer": "mant"
+    }
+  },
+  "author": "Barney Rubble <b@rubble.com> (http://barnyrubble.tumblr.com/)",
+  "homepage": "http://barnyrubble.tumblr.com",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4"
+  }
+}
